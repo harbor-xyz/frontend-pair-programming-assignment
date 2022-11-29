@@ -9,8 +9,8 @@ The code in this assignment is broken. It is your job to figure out why.
 To reproduce the error -
 
 1. After running `yarn`
-2. In a terminal window, run `npx hardhat node --no-deploy`
-3. In another terminal window, run `npx hardhat deploy --network localhost`
+2. In a terminal window, run `npx hardhat node --no-deploy`, from the root of this repository.
+3. In another terminal window, run `npx hardhat deploy --network localhost`. Make sure that you run this from the root of this repository.
 
 You should see this error -
 
