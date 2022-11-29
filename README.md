@@ -10,7 +10,7 @@ To reproduce the error -
 
 1. After running `yarn`
 2. In a terminal window, run `npx hardhat node --no-deploy`
-3. In another terminal window, run `npx hardhat deploy`
+3. In another terminal window, run `npx hardhat deploy --network localhost`
 
 You should see this error -
 
@@ -22,6 +22,7 @@ HardhatError: HH700: Artifact for contract "Greeter" not found.
 
 1. Everything in the `deploy` folder will get executed in alphabetical order.
 2. An `artifact` is what is needed to deploy a smart contract onto a blockchain. It is a collection of folders, but ultimately boils down to a json object that has the necessary bytecode.
+3. The bug is _not_ in the `deploy` folder.
 
 ## What we are looking for
 
