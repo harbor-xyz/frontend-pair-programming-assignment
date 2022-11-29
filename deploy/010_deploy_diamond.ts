@@ -6,15 +6,17 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
   const {diamond, catchUnknownSigner} = deployments;
 
   const {deployer, diamondOwner} = await getNamedAccounts();
+  await hre.deployments.getExtendedArtifact('Greeter');
 
-  await catchUnknownSigner(
-    diamond.deploy('DiamondExample', {
-      from: deployer,
-      owner: diamondOwner,
-      facets: ['ActionFacet', 'FacetToDelete', 'TestFacet'],
-      log: true,
-    })
-  );
+  //   await catchUnknownSigner(
+  //     diamond.deploy('DiamondExample', {
+  //       from: deployer,
+  //       owner: diamondOwner,
+  //       facets: ['ActionFacet', 'FacetToDelete', 'TestFacet'],
+  //       log: true,
+  //     })
+  //   );
+  // };
 };
 export default func;
 func.tags = ['DiamondExample', 'DiamondExample_deploy'];

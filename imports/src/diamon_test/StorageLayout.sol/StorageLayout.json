@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "StorageLayout",
+  "sourceName": "src/diamon_test/StorageLayout.sol",
+  "abi": [],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220289d86301d84bf2512d06ca2aa90b5781ecab13727789c4cd31a4fcb8487943464736f6c63430007010033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220289d86301d84bf2512d06ca2aa90b5781ecab13727789c4cd31a4fcb8487943464736f6c63430007010033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
